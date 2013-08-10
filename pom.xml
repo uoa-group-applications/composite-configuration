@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>nz.ac.auckland</groupId>
+		<artifactId>uoa-parent</artifactId>
+		<version>1.8</version>
+	</parent>
+	<groupId>nz.ac.auckland.composite</groupId>
+	<artifactId>composite-configuration</artifactId>
+	<packaging>jar</packaging>
+	<name>composite-configuration</name>
+	<version>3.2-SNAPSHOT</version>
+	<description>
+		Allows us to use StickyCode @Configuration tag to force fail-fast Spring configuration in our artifacts.
+	</description>
+	<dependencies>
+		<!-- provides the injected configuration -->
+		<dependency>
+			<groupId>net.stickycode.configured</groupId>
+			<artifactId>sticky-configured-spring3</artifactId>
+			<version>[5,6)</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.stickycode.composite</groupId>
+					<artifactId>sticky-composite-spring3</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>jcl-over-slf4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>
