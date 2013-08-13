@@ -11,7 +11,7 @@
 	<artifactId>composite-configuration</artifactId>
 	<packaging>jar</packaging>
 	<name>composite-configuration</name>
-	<version>3.2</version>
+	<version>3.3-SNAPSHOT</version>
 	<description>
 		Allows us to use StickyCode @Configuration tag to force fail-fast Spring configuration in our artifacts.
 	</description>
@@ -20,7 +20,7 @@
 		<url>https://github.com/uoa-group-applications/composite-configuration</url>
 		<connection>scm:git:https://github.com/uoa-group-applications/composite-configuration.git</connection>
 		<developerConnection>scm:git:git@github.com:uoa-group-applications/composite-configuration.git</developerConnection>
-	  <tag>composite-configuration-3.2</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<dependencies>
